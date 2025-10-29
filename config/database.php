@@ -3,9 +3,9 @@
 
 try {
     $db = new PDO(
-        'mysql:host=127.0.0.1;dbname=draftosaurus_db;charset=utf8',
+        'mysql:host=database;dbname=draftoDB;charset=utf8',
         'root',
-        '' // contraseña vacia por defecto en XAMPP
+        'root123'
     );
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); 
