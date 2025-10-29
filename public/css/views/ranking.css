@@ -1,0 +1,68 @@
+/* Contenedor */
+.ranking-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Título */
+.ranking-title {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+/* Tabla */
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--gray);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Encabezados */
+.ranking-table th {
+  background-color: var(--black);
+  color: var(--orange);
+  font-weight: 600;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+/* Celdas */
+.ranking-table td {
+  padding: 12px 10px;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover filas */
+.ranking-table tbody tr:hover {
+  background-color: rgba(255, 107, 0, 0.2);
+  font-weight: 600;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Links de usuario */
+.ranking-table td a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.ranking-table td a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ranking-table th,
+  .ranking-table td {
+    font-size: 0.9rem;
+    padding: 8px 6px;
+  }
+}

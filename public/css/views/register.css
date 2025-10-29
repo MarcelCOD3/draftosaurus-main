@@ -1,0 +1,273 @@
+/* ================================
+   Register Page Styles
+   ================================ */
+
+:root {
+  --black: #000000;
+  --dark-black: #1a1a1a;
+  --gray: #333333;
+  --light-gray: #666666;
+  --orange: #ff6b00;
+  --dark-orange: #e55a00;
+  --light-orange: #ff8533;
+  --white: #ffffff;
+  --text-gray: #f5f5f5;
+}
+
+/* Contenedor general */
+.hero-section {
+  background: var(--dark-black);
+  color: var(--text-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Título */
+.hero-title {
+  font-weight: 700;
+  color: var(--orange);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: var(--text-gray);
+  margin-bottom: 0.4rem;
+}
+
+/* Input group */
+.input-group {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--gray);
+}
+
+.input-group-text {
+  background: var(--light-gray);
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input fields */
+.form-control {
+  background: var(--dark-black);
+  border: 1px solid var(--light-gray);
+  color: var(--text-gray);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 6px var(--orange);
+  background: var(--dark-black);
+  color: var(--white);
+}
+
+/* Password toggle (ojito) */
+.toggle-password {
+  cursor: pointer;
+}
+
+.toggle-password i {
+  color: var(--light-orange);
+  transition: color 0.2s ease;
+}
+
+.toggle-password:hover i {
+  color: var(--orange);
+}
+
+/* Checkbox */
+.form-check-label {
+  color: var(--text-gray);
+}
+
+.form-check-input {
+  background: var(--gray);
+  border: 1px solid var(--light-gray);
+}
+
+.form-check-input:checked {
+  background-color: var(--orange);
+  border-color: var(--dark-orange);
+}
+
+/* Botón de registro */
+.btn-custom {
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: var(--dark-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.btn-custom:disabled {
+  background: var(--light-gray);
+  color: var(--gray);
+  cursor: not-allowed;
+}
+
+/* Alertas */
+.alert {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.alert-danger {
+  background: #b71c1c;
+  color: var(--white);
+}
+
+.alert-success {
+  background: #2e7d32;
+  color: var(--white);
+}
+
+/* Modal */
+.modal-content {
+  background: var(--gray);
+  color: var(--text-gray);
+  border-radius: 10px;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+/* ================================
+   Modal Términos y Condiciones
+   ================================ */
+#termsModal .modal-content {
+  background-color: var(--dark-black); /* fondo oscuro */
+  color: var(--white); /* texto general */
+}
+
+#termsModal .modal-header,
+#termsModal .modal-footer {
+  border-color: var(--gray); /* bordes sutiles */
+}
+
+#termsModal .modal-title.title {
+  color: var(--orange); /* títulos en naranja */
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#termsModal .modal-body p {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+#termsModal .btn-secondary {
+  background-color: var(--orange);
+  color: var(--black);
+  border: none;
+  font-weight: 600;
+}
+
+#termsModal .btn-secondary:hover {
+  background-color: var(--dark-orange);
+  color: var(--white);
+}
+
+/* ================================
+   Modal Términos y Condiciones
+   ================================ */
+
+/* Títulos dentro del modal */
+.modal-body .title {
+  font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto del modal */
+.modal-body p {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Enlaces dentro del modal */
+.modal-body a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.modal-body a:hover {
+  color: var(--light-orange);
+}
+
+/* Ajustes generales del modal */
+.modal-content {
+  background: var(--dark-black);
+  color: var(--text-gray);
+  border-radius: 10px;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+/* Botón dentro del modal */
+.modal-footer .btn-custom {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.modal-footer .btn-custom:hover {
+  background: var(--dark-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos del modal */
+.modal.fade.show .modal-body .title {
+  font-weight: 700;
+  color: var(--orange) !important;
+  text-transform: uppercase;
+}
+
+/* Texto del modal */
+.modal.fade.show .modal-body p {
+  color: var(--text-gray) !important;
+}
+
+/* Fondo del modal */
+.modal.fade.show .modal-content {
+  background: var(--dark-black) !important;
+  color: var(--text-gray) !important;
+}
+
+/* Enlaces */
+.modal.fade.show .modal-body a {
+  color: var(--orange) !important;
+}
+
+.modal.fade.show .modal-body a:hover {
+  color: var(--light-orange) !important;
+}
