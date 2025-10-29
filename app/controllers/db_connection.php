@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "database";
 $username = "root";
-$password = ""; //
-$dbname = "draftosaurus_chat";
+$password = "root123"; //
+$dbname = "draftoDB";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
